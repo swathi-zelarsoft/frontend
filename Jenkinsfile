@@ -3,9 +3,9 @@ agent any
      stages{
         stage("Prepare Artifacts"){
         steps {
-        sh ```
+        sh '''
         zip -r ../frontend.zip *
-        ```
+        '''
         }
         }
        }

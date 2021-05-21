@@ -1,5 +1,5 @@
 @Library ('todo') _
-todo(
+todo2(
         COMPONENT             : 'frontend',
         PROJECT_NAME          : "Todo",
         SLAVE_LABEL           : "JAVA",

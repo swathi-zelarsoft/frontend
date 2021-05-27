@@ -20,5 +20,4 @@ Update Login and todo Ip address.
 Now change the root in /etc/nginx/sites-available/default   /var/www/html/frontend/dist
 
 # systemctl restart nginx
-:)
 ```

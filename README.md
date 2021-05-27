@@ -21,3 +21,4 @@ Now change the root in /etc/nginx/sites-available/default   /var/www/html/fronte
 
 # systemctl restart nginx
 ```
+# Release tag 0.0.2 27-05-21

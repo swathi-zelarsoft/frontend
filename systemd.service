@@ -3,7 +3,7 @@ Description=frontend service
 [Service]
 Type=simple
 Environment=AUTH_API_ADDRESS=http://USERSDNS:8080
-Environment=TODOS_API_ADDRESS=http://todoDNS:8080
+Environment=TODOS_API_ADDRESS=http://toDNS:8080
 ExecStart=/root/var/www/html/frontend/dist
 Restart=on-failure
 [Install]

@@ -9,6 +9,7 @@
 # git clone https://github.com/zelar-soft-todoapp/frontend.git
 # cd frontend
 # npm install
+# npm install --save-dev node-sass
 # npm run build
 
 Update Login and todo Ip address.
@@ -22,3 +23,4 @@ Now change the root in /etc/nginx/sites-available/default   /var/www/html/fronte
 # systemctl restart nginx
 ```
 # Release tag 0.0.2 27-05-21
+

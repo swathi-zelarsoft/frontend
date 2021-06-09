@@ -6,6 +6,9 @@
 # systemctl start nginx
 # apt install npm
 # cd /var/www/html
+
+Download and build Frontend component
+
 # git clone https://github.com/zelar-soft-todoapp/frontend.git
 # cd frontend
 # npm install
@@ -14,14 +17,13 @@
 
 Update Login and todo Ip address.
 
-# cd /var/www/html/frontend
-# cd config
-# vi index.js
-
-Now change the root in /etc/nginx/sites-available/default   /var/www/html/frontend/dist
-
+# rm -rf /var/www/html/index.debian.html /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
+# mv todo.conf /etc/nginx/sites-enabled//roboshop.conf
+# mv systemd.service /etc/systemd/system/frontend.service
 # systemctl restart nginx
-```
-# Release tag 0.0.2 27-05-21
+Now start Frontend service
+# systemctl daemon-reload
+# systemctl start frontend.service
 
-#Release for new
+```
+

@@ -1,3 +1,7 @@
 FROM    node:10-alpine as builder
-RUN     mkdir /app
-COPY    *    /app/
+RUN     mkdir /var/www/htm/frontend
+COPY    package-lock.json .
+COPY    package.json   .
+COPY    src src
+COPY    build build
+COPY    config config

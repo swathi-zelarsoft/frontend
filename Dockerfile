@@ -6,3 +6,6 @@ COPY    package.json   .
 COPY    src src
 COPY    build build
 COPY    config config
+RUN     npm install
+RUN     npm run build
+

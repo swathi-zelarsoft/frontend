@@ -14,3 +14,4 @@ FROM        nginx:1.21.1
 RUN         mkdir -p /var/www/html
 COPY        --from=base /app/dist /var/www/html
 COPY        todo.conf /etc/nginx/conf.d/default.conf
+CMD          ["nginx", "-g", "daemon off;"]

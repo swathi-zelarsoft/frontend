@@ -1,12 +1,7 @@
 FROM    node:8-alpine as builder
 RUN     mkdir -p /frontend
 WORKDIR  /frontend
-COPY    package-lock.json .
-COPY    package.json   .
-COPY    src src
-COPY    build build
-COPY    config config
-COPY    index.html .
+COPY    . /frontend
 RUN     npm install
 RUN     npm run build
 FROM    nginx
